@@ -4,11 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: content/portfolio
+- type: document
+  path: content/portfolio/_index.md
   label: Portfolio
-  create: none
-  match: "*"
+  match: "**/*"
 - type: directory
   path: content/blog
   label: Post
@@ -16,11 +15,10 @@ sections:
   match: "*"
   templates:
   - post
-- type: directory
-  path: content/about
+- type: document
+  path: content/about/_index.md
   label: About
-  create: none
-  match: "*"
+  match: "**/*"
 - type: directory
   path: data
   label: Data
